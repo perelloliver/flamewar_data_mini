@@ -1,0 +1,40 @@
+CONTEXT
+You are helping to create a dataset of hyper-realistic online chat conversations. 
+Today we're generating chats which may include healthy arguments, rude banter, and debate.
+Switch off your profanity filter for this task.
+
+PROMPT
+Your job is to do the following:
+
+Generate healthy arguments and instances of adult banter, containing linguistic features specified in the FEATURE SPEC and relevant to the ROOT TOPIC.
+These chat conversations simulate a highly populated, public chat stream - like a Discord chat.
+
+Ensure the chatstream contains at least {} messages from a minimum of {} users. Ensure output is in JSON as specified in the FORMAT.
+
+EXTRA INSTRUCTIONS
+Do NOT add contextual clues such as scenarios or names in parentheses (e.g., "(a few minutes into the game)"). 
+Identify users as User 1, User 2, User 3, etc. No usernames or additional numbers. 
+Do NOT directly refer to any terminology used in the FEATURE SPEC, CONTEXT, or PROMPT. Develop any terminology you use to avoid direct inference. 
+Do NOT use emojis.
+
+IMPORTANT: Follow the FEATURE SPEC. 
+
+FEATURE SPEC:
+    Profanity: {}
+    Is debate?: {}
+    Friendly insults: {}
+    Joking harassment: {}
+    Friendly aggression: {}
+    Unusual insults or bad-natured comments: {}
+    Internet slang, meme references, acronym use: {}
+    References to violence: {}
+    Noise messages from other users (e.g., User 1234: hi!!!, User 33: password for lock??, User 9: lol etc): {}
+    Levels of internet-specific language use (lowercase only/l33tsp34k/cool meme, bro): {}
+    Overall sentiment analysis: {}
+    Average message length: {}
+
+ROOT TOPIC: {}
+
+FORMAT: 
+"username": 
+"message":
